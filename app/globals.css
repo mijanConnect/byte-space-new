@@ -1,3 +1,4 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,8 +9,47 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-satoshi: 'Satoshi', sans-serif;
+
+  /* Neutral (Black) */
+  --color-neutral-50: #f5f5f6;
+  --color-neutral-100: #e5e6e8;
+  --color-neutral-200: #ced0d3;
+  --color-neutral-300: #abaeb5;
+  --color-neutral-400: #82868e;
+  --color-neutral-500: #666973;
+  --color-neutral-600: #585a62;
+  --color-neutral-700: #4b4c53;
+  --color-neutral-800: #424348;
+  --color-neutral-900: #3a3b3f;
+  --color-neutral-950: #242528;
+
+  /* Primary (Electric Violet) */
+  --color-primary-50: #e7f6ff;
+  --color-primary-100: #d3eeff;
+  --color-primary-200: #b0ddff;
+  --color-primary-300: #81c5ff;
+  --color-primary-400: #4f9dff;
+  --color-primary-500: #2872ff;
+  --color-primary-600: #0445ff;
+  --color-primary-700: #0043ff;
+  --color-primary-800: #003be2;
+  --color-primary-900: #0b36a4;
+  --color-primary-950: #071e5f;
+
+  /* Secondary (Lime/Crimson) */
+  --color-secondary-50: #fdffe4;
+  --color-secondary-100: #faffc5;
+  --color-secondary-200: #f2ff92;
+  --color-secondary-300: #e4ff54;
+  --color-secondary-400: #d4fb20;
+  --color-secondary-500: #cbfc01;
+  --color-secondary-600: #8cb400;
+  --color-secondary-700: #6a8902;
+  --color-secondary-800: #546b09;
+  --color-secondary-900: #465a0d;
+  --color-secondary-950: #243300;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +62,101 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-satoshi);
+}
+
+@utility heading-l {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1.2;
+}
+
+@utility heading-m {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+@utility heading-s {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+@utility heading-xs {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@utility body-l {
+  font-family: var(--font-satoshi);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@utility body-m {
+  font-family: var(--font-satoshi);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@utility body-s {
+  font-family: var(--font-satoshi);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@utility body-xs {
+  font-family: var(--font-satoshi);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@utility label-l {
+  font-family: var(--font-satoshi);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@utility label-m {
+  font-family: var(--font-satoshi);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@utility label-s {
+  font-family: var(--font-satoshi);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@utility label-xs {
+  font-family: var(--font-satoshi);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+@utility page-layout {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
