@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { LogoIconBlack } from "../icons/LogoIconBlack";
-import { FooterSearchBar } from "./FooterSearchBar";
+import { SearchBar } from "./FooterSearchBar";
 
 export function Footer() {
   return (
@@ -15,7 +15,11 @@ export function Footer() {
             Stay Up to date with our latest features and releases by joining our newsletter.
           </p>
           <div className="mt-4">
-            <FooterSearchBar />
+            <SearchBar 
+              placeholder="Enter your email" 
+              buttonText="Search" 
+              type="email" 
+            />
           </div>
           <p className="body-xs text-neutral-500 mt-2">
             By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
