@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function CTASection() {
   return (
-    <section className="w-full relative flex items-center justify-center bg-[#0a3ee0] overflow-hidden">
+    <section className="w-full relative flex items-center justify-center bg-primary-800 overflow-hidden py-6 sm:py-0">
       {/* Background Grid */}
       <div
         className="absolute inset-0 opacity-20 pointer-events-none"
