@@ -18,7 +18,7 @@ export function CTASection() {
 
       {/* Image in normal document flow to dictate section height */}
       <img
-        src="/images/cta/cta.png"
+        src="/images/CTA/cta.png"
         alt="Unlock Potential Background Ornaments"
         className="relative z-10 w-full h-auto min-h-[450px] md:min-h-[400px] object-cover object-bottom"
       />
