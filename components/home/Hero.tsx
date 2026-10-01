@@ -34,10 +34,10 @@ export function Hero() {
       <div className="page-layout relative z-20 flex flex-col items-center text-center">
         {/* Text Content */}
         <div className="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3 flex flex-col items-center">
-          <h1 className="heading-m md:heading-l text-neutral-50 mb-4 md:mb-6">
+          <h1 className="heading-s md:heading-l text-neutral-50 mb-4 md:mb-8">
             Get Access to Hundreds <br /> Courses Available
           </h1>
-          <p className="body-m md:body-l text-neutral-100 mb-8 md:mb-10 max-w-4xl">
+          <p className="body-m md:body-l text-neutral-100 mb-8 md:mb-15 max-w-4xl">
             Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
           </p>
 

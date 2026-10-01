@@ -42,30 +42,30 @@ export function PromoSection() {
         <div className="col-span-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-1 md:gap-12 lg:gap-0">
           {/* Text Left */}
           <div className="px-0 flex flex-col justify-center">
-            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
+            <h2 className="heading-s md:heading-m mb-4 lg:mb-6">
               Your Path to Professional<br className="hidden lg:block" /> Growth Starts Here!
             </h2>
-            <p className="text-neutral-500 text-sm lg:text-base leading-relaxed mb-10 max-w-md">
+            <p className="body-m text-neutral-900 mb-4 lg:mb-10 max-w-md">
               Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
             </p>
             <div className="flex items-center gap-8 lg:gap-12">
               <div>
-                <p className="text-3xl lg:text-4xl font-bold text-blue-600 mb-1">
+                <p className="heading-s text-primary-600 mb-1">
                   <CountUp end={12} suffix="K" />
                 </p>
-                <p className="text-neutral-500 text-sm">Students</p>
+                <p className="body-s text-neutral-500">Students</p>
               </div>
               <div>
-                <p className="text-3xl lg:text-4xl font-bold text-blue-600 mb-1">
+                <p className="heading-s text-primary-600 mb-1">
                   <CountUp end={70} suffix="+" />
                 </p>
-                <p className="text-neutral-500 text-sm">Courses</p>
+                <p className="body-s text-neutral-500">Courses</p>
               </div>
               <div>
-                <p className="text-3xl lg:text-4xl font-bold text-blue-600 mb-1">
+                <p className="heading-s text-primary-600 mb-1">
                   <CountUp end={16} />
                 </p>
-                <p className="text-neutral-500 text-sm">Creators</p>
+                <p className="body-s text-neutral-500">Creators</p>
               </div>
             </div>
           </div>
@@ -129,10 +129,10 @@ export function PromoSection() {
 
           {/* Text Right */}
           <div className="order-1 lg:order-2 px-0 flex flex-col justify-center lg:pl-10 xl:pl-16">
-            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
+            <h2 className="heading-s md:heading-m mb-4 lg:mb-6">
               Create & Manage<br className="hidden lg:block" /> Courses Easily.
             </h2>
-            <p className="text-neutral-500 text-sm lg:text-base leading-relaxed mb-8">
+            <p className="body-m text-neutral-900 mb-8">
               <span className="font-bold text-neutral-900">ByteSpace</span> supports individuals or entities in the creation, publication, and administration of educational courses.
             </p>
             <ul className="flex flex-col gap-4">
@@ -148,7 +148,7 @@ export function PromoSection() {
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                   </div>
-                  <span className="text-base text-neutral-800 font-medium">{item}</span>
+                  <span className="body-m text-neutral-800 font-medium">{item}</span>
                 </li>
               ))}
             </ul>

@@ -25,15 +25,15 @@ export function CTASection() {
 
       {/* Absolute positioned content */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 page-layout">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-3xl">
+        <h2 className="heading-s md:heading-m text-white max-w-3xl">
           Unlock Your Potential as a<br className="hidden md:block" /> Creator with ByteSpace
         </h2>
-        <p className="text-white/80 text-sm md:text-base leading-relaxed max-w-4xl">
+        <p className="body-m text-white/80 max-w-4xl">
           Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.
         </p>
         <Link
           href="/join"
-          className="bg-[#CCFF00] hover:bg-[#b3e600] text-neutral-900 font-bold px-8 py-3.5 rounded-full transition-colors inline-flex items-center justify-center text-sm md:text-base shadow-lg"
+          className="bg-secondary-500 hover:bg-secondary-600 text-neutral-900 font-bold px-8 py-3.5 rounded-full transition-colors inline-flex items-center justify-center label-m shadow-lg shadow-secondary-500/20"
         >
           Join as Creator
         </Link>

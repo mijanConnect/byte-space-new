@@ -20,15 +20,15 @@ export function Navbar() {
 
         {/* Center: Navigation (Desktop) */}
         <nav className="hidden md:flex col-span-6 justify-center gap-8 items-center">
-          <Link href="/" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Home</Link>
-          <Link href="/courses" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Courses</Link>
-          <Link href="/creators" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Creators</Link>
+          <Link href="/" className="body-m text-neutral-50 hover:text-neutral-200 transition-colors">Home</Link>
+          <Link href="/courses" className="body-m text-neutral-50 hover:text-neutral-200 transition-colors">Courses</Link>
+          <Link href="/creators" className="body-m text-neutral-50 hover:text-neutral-200 transition-colors">Creators</Link>
         </nav>
 
         {/* Right: Auth & Cart (Desktop) */}
         <div className="hidden md:flex col-span-3 justify-end items-center gap-8">
-          <Link href="/login" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Sign In</Link>
-          <Link href="/register" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Join Us</Link>
+          <Link href="/login" className="body-m text-neutral-50 hover:text-neutral-200 transition-colors">Sign In</Link>
+          <Link href="/register" className="body-m text-neutral-50 hover:text-neutral-200 transition-colors">Join Us</Link>
           <button className="text-neutral-50 hover:text-neutral-200 transition-colors">
             <CartIcon className="w-6 h-6" fill="currentColor" />
           </button>
@@ -50,13 +50,13 @@ export function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden px-6 pb-6 pt-2 flex flex-col gap-4 bg-primary-600">
-          <Link href="/" className="label-m text-neutral-50">Home</Link>
-          <Link href="/courses" className="label-m text-neutral-50">Courses</Link>
-          <Link href="/creators" className="label-m text-neutral-50">Creators</Link>
+          <Link href="/" className="body-m text-neutral-50">Home</Link>
+          <Link href="/courses" className="body-m text-neutral-50">Courses</Link>
+          <Link href="/creators" className="body-m text-neutral-50">Creators</Link>
           <div className="h-px bg-primary-500 my-2" />
-          <Link href="/login" className="label-m text-neutral-50">Sign In</Link>
-          <Link href="/register" className="label-m text-neutral-50">Join Us</Link>
-          <button className="flex items-center gap-2 label-m text-neutral-50 mt-2">
+          <Link href="/login" className="body-m text-neutral-50">Sign In</Link>
+          <Link href="/register" className="body-m text-neutral-50">Join Us</Link>
+          <button className="flex items-center gap-2 body-m text-neutral-50 mt-2">
             <CartIcon className="w-6 h-6" fill="currentColor" />
             <span>Cart</span>
           </button>

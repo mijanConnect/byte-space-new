@@ -40,10 +40,10 @@ export function LearningPaths() {
       <div className="page-layout">
         {/* Header */}
         <div className="col-span-12 md:col-span-8 md:col-start-3 text-center mb-14">
-          <h2 className="text-3xl md:text-[40px] font-bold text-neutral-900 mb-6 leading-tight">
+          <h2 className="heading-s md:heading-m mb-4 lg:mb-6">
             Explore Diverse Learning Paths at Bytespace
           </h2>
-          <p className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+          <p className="body-m text-neutral-900 mb-4 lg:mb-10">
             At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.
           </p>
         </div>

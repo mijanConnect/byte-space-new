@@ -109,29 +109,29 @@ export function DiscoverCourses() {
       <div className="page-layout">
         {/* Header */}
         <div className="col-span-12 md:col-span-8 md:col-start-3 text-center mb-0">
-          <h2 className="text-3xl md:text-[40px] font-bold text-neutral-900 mb-6 leading-tight">
+          <h2 className="heading-s md:heading-m mb-4 lg:mb-6">
             Discover Your Passion,<br />Build Your Skills
           </h2>
-          <p className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+          <p className="body-m text-neutral-900">
             At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
           </p>
         </div>
 
         {/* Categories (Pills) */}
-        <div className="col-span-12 flex flex-wrap justify-center items-center gap-2.5 mb-6 max-w-[900px] mx-auto">
+        <div className="col-span-12 flex flex-wrap justify-center items-center gap-x-2.5 gap-y-4 mb-6 max-w-[900px] mx-auto">
           {categories.map((cat, idx) => (
             <button
               key={idx}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-1.5 rounded-full text-[13px] font-semibold transition-colors ${activeCategory === cat
-                ? "bg-[#CCFF00] text-neutral-900"
-                : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
+              className={`px-4 py-1.5 rounded-full label-m transition-colors ${activeCategory === cat
+                ? "bg-secondary-500 text-neutral-900"
+                : "bg-neutral-50 text-neutral-700 hover:bg-neutral-200"
                 }`}
             >
               {cat}
             </button>
           ))}
-          <button className="px-4 py-1.5 rounded-full text-[13px] font-bold text-blue-600 hover:text-blue-700 transition-colors">
+          <button className="rounded-full label-m text-blue-600 hover:text-blue-700 transition-colors">
             + More
           </button>
         </div>
