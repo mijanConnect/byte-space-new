@@ -2,6 +2,8 @@
 
 **ByteSpace** is a modern online course platform landing page and authentication system built with **Next.js 16**. Users can browse courses, explore learning paths, and sign up or log in to the platform.
 
+**🌐 Live Demo:** [https://byte-space-new-mijanur-rahman.vercel.app/](https://byte-space-new-mijanur-rahman.vercel.app/)
+
 ---
 
 ## 🚀 Tech Stack
