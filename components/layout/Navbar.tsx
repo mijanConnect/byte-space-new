@@ -9,7 +9,7 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 border-b border-primary-400/20">
+    <header className="absolute top-0 left-0 w-full z-50">
       <div className="page-layout py-4 md:py-6 items-center">
         {/* Left: Logo */}
         <div className="col-span-6 md:col-span-3 flex items-center">

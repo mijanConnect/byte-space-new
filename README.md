@@ -1,39 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteSpace
 
-## Getting Started
+**ByteSpace** is a modern online course platform landing page and authentication system built with **Next.js 16**. Users can browse courses, explore learning paths, and sign up or log in to the platform.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+| Technology       | Version   | Purpose                                   |
+| ---------------- | --------- | ----------------------------------------- |
+| **Next.js**      | `16.3.7`  | React framework (App Router)              |
+| **React**        | `19.2.8`  | UI Library                                |
+| **TypeScript**   | `^5`      | Type-safe JavaScript                      |
+| **Tailwind CSS** | `^4`      | Utility-first CSS framework               |
+| **Swiper**       | `^14.3.0` | Slider/Carousel component (Testimonials)  |
+| **ESLint**       | `^9`      | Code linting                              |
+| **PostCSS**      | —         | CSS processing (Tailwind plugin)          |
+
+**Fonts:**
+- **Poppins** (Google Fonts) — Used for all headings
+- **Satoshi** (Fontshare) — Used for body text and labels
+
+---
+
+## 📁 Project Structure
+
+```
+byte-space-new/
+├── app/                          # Next.js App Router
+│   ├── globals.css               # Global styles, design tokens, custom utilities
+│   ├── layout.tsx                # Root layout (Navbar + Footer wrapper)
+│   ├── page.tsx                  # Home page
+│   ├── login/
+│   │   └── page.tsx              # Login page
+│   └── register/
+│       └── page.tsx              # Registration page
+│
+├── components/
+│   ├── home/                     # Home page sections
+│   │   ├── Hero.tsx              # Hero section (search bar, floating cards)
+│   │   ├── Companies.tsx         # Trusted companies logo strip
+│   │   ├── DiscoverCourses.tsx   # Course discovery grid
+│   │   ├── DiscoverCourseCard.tsx# Individual course card
+│   │   ├── LearningPaths.tsx     # Learning paths section
+│   │   ├── LearningPathCard.tsx  # Individual learning path card
+│   │   ├── PromoSection.tsx      # Promotional/features section
+│   │   ├── CTASection.tsx        # Call to action section
+│   │   ├── TestimonialsSection.tsx# Testimonials slider (Swiper)
+│   │   ├── CountUp.tsx           # Animated number counter
+│   │   ├── CourseCard.tsx        # Hero floating course card
+│   │   ├── ProgressCard.tsx      # Hero floating progress card
+│   │   ├── StudentsCard.tsx      # Hero floating students card
+│   │   └── RevenueCard.tsx       # Revenue stats card
+│   │
+│   ├── layout/                   # Layout components
+│   │   ├── Navbar.tsx            # Navigation bar
+│   │   ├── Footer.tsx            # Footer
+│   │   ├── FooterSearchBar.tsx   # Reusable search bar component
+│   │   ├── LayoutWrapper.tsx     # Layout wrapper (hides Navbar/Footer on auth pages)
+│   │   └── AuthContainer.tsx     # Authentication pages layout container
+│   │
+│   ├── ui/                       # Reusable UI components
+│   │   └── Input.tsx             # Custom input component
+│   │
+│   └── icons/                    # SVG icon components
+│       ├── LogoIcon.tsx          # ByteSpace logo (white)
+│       ├── LogoIconBlack.tsx     # ByteSpace logo (black)
+│       ├── LogoMarkIcon.tsx      # Logo mark only
+│       ├── CompanyOneLogo.tsx    # Partner company logos
+│       ├── CompanyTwoLogo.tsx
+│       ├── CompanyThreeLogo.tsx
+│       ├── CompanyFourLogo.tsx
+│       ├── CompanyFiveLogo.tsx
+│       ├── BusinessIcon.tsx      # Category icons
+│       ├── CartIcon.tsx
+│       ├── DesignIcon.tsx
+│       ├── DevelopmentIcon.tsx
+│       ├── ITIcon.tsx
+│       ├── MarketingIcon.tsx
+│       └── PhotographyIcon.tsx
+│
+├── public/
+│   └── images/
+│       ├── hero/                 # Hero section images
+│       ├── CTA/                  # CTA section images
+│       └── register/             # Registration page images
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+└── eslint.config.mjs
+```
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- **Node.js** — `v18.18.0` or higher (recommended: `v24+`)
+- **npm** — Comes bundled with Node.js
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/mijanConnect/byte-space-new.git
+cd byte-space-new
+```
+
+### Step 2: Install Dependencies
+
+```bash
+npm install
+```
+
+### Step 3: Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once the server is running, open your browser and go to: **[http://localhost:3002](http://localhost:3002)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **Note:** This project runs on port `3002` (not the default `3000`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Step 4: Production Build (Optional)
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📜 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command          | Description                                  |
+| ---------------- | -------------------------------------------- |
+| `npm run dev`    | Starts the development server (port 3002)    |
+| `npm run build`  | Creates a production build                   |
+| `npm run start`  | Serves the production build                  |
+| `npm run lint`   | Runs ESLint to check for code issues         |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Pages / Routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# byte-space-new
-# byte-space-new
-# byte-space-new
+| Route       | Description                  |
+| ----------- | ---------------------------- |
+| `/`         | Home page (Landing page)     |
+| `/login`    | User login page              |
+| `/register` | User registration page       |
+
+
+## 🧑‍💻 Development Notes
+
+- This project uses the **Next.js App Router** (`app/` directory)
+- The `@/` path alias is configured to refer to the root directory
+- All icon components are built with inline SVGs (`components/icons/`)
+- The **LayoutWrapper** component hides Navbar and Footer on authentication pages
+- **Swiper.js** is used for the Testimonials section slider
+- Tailwind CSS v4 is used with the `@theme inline` syntax for design tokens
