@@ -26,6 +26,7 @@ export function Hero() {
           src="/images/hero/3d-ornament.png"
           alt="3D Ornaments"
           fill
+          sizes="100vw"
           className="object-contain object-bottom"
           priority
         />
@@ -86,6 +87,7 @@ export function Hero() {
             src="/images/hero/hero-people.png"
             alt="Students and professionals"
             fill
+            sizes="(max-width: 768px) 100vw, 850px"
             className="object-contain object-bottom"
             priority
           />

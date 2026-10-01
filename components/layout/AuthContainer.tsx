@@ -14,7 +14,7 @@ export function AuthContainer({ title, subtitle, children }: AuthContainerProps)
     <div className="min-h-screen w-full bg-primary-700 relative overflow-hidden flex flex-col justify-center">
       {/* Background Grid */}
       <div
-        className="absolute inset-0 opacity-[0.05] pointer-events-none"
+        className="absolute inset-0 opacity-[0.15] pointer-events-none"
         style={{
           backgroundSize: "80px 80px",
           backgroundImage: `
@@ -47,6 +47,7 @@ export function AuthContainer({ title, subtitle, children }: AuthContainerProps)
               src="/images/register/register-art.png"
               alt="Authentication Artwork"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-contain object-left lg:object-left"
               priority
             />
