@@ -9,8 +9,8 @@ export default function RegisterPage() {
       subtitle="The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost"
     >
       <div className="mb-8">
-        <p className="text-primary-600 font-semibold mb-2 label-m">Create an Account</p>
-        <h2 className="heading-s md:heading-m text-neutral-900">Welcome to<br/>ByteSpace</h2>
+        <p className="text-primary-600 body-l">Create an Account</p>
+        <h2 className="heading-s md:heading-m text-neutral-900">Welcome to<br />ByteSpace</h2>
       </div>
 
       <form className="flex flex-col gap-6">
@@ -26,7 +26,7 @@ export default function RegisterPage() {
       </form>
 
       <div className="mt-12 text-center">
-        <p className="body-s text-neutral-500">
+        <p className="body-m text-neutral-700">
           Already have an account? <Link href="/login" className="text-primary-600 font-medium hover:underline">Login</Link>
         </p>
       </div>

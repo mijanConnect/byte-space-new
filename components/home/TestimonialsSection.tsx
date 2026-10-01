@@ -62,7 +62,7 @@ export function TestimonialsSection() {
           <h2 className="heading-s md:heading-m text-neutral-900">
             Discover What Our<br className="hidden lg:block" /> Community Is Saying
           </h2>
-          <p className="text-neutral-500 body-s md:body-m">
+          <p className="text-neutral-700 body-m md:body-l">
             At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
           </p>
         </div>
@@ -98,9 +98,9 @@ export function TestimonialsSection() {
                     alt={testimonial.name}
                     className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover mb-4 lg:mb-6"
                   />
-                  <h4 className="label-m lg:label-l text-neutral-900 mb-1">{testimonial.name}</h4>
-                  <p className="text-primary-600 body-xs lg:body-s mb-4 lg:mb-6">{testimonial.role}</p>
-                  <p className="text-neutral-500 body-xs lg:body-s h-full">
+                  <h4 className="heading-x lg:heading-xs text-neutral-900 mb-1">{testimonial.name}</h4>
+                  <p className="text-primary-800 body-m lg:body-l mb-4 lg:mb-6">{testimonial.role}</p>
+                  <p className="text-neutral-500 body-m lg:body-l h-full">
                     {testimonial.quote}
                   </p>
                 </div>
