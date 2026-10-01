@@ -13,9 +13,15 @@ export function StudentsCard() {
         {[1, 2, 3, 4, 5, 6, 7].map((i) => (
           <div
             key={i}
-            className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-neutral-200 flex-shrink-0"
+            className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-neutral-200 flex-shrink-0 overflow-hidden"
             style={{ zIndex: 10 - i }}
-          />
+          >
+            <img
+              src={`https://i.pravatar.cc/100?img=${i + 30}`}
+              alt={`Avatar ${i}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
         ))}
         <div
           className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-secondary-400 flex items-center justify-center flex-shrink-0 relative"
