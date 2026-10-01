@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export function UnlockSection() {
+export function CTASection() {
   return (
     <section className="w-full relative flex items-center justify-center bg-[#0a3ee0] overflow-hidden">
       {/* Background Grid */}
