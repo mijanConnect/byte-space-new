@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { LayoutWrapper } from "@/components/layout/LayoutWrapper";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,11 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className="h-full antialiased font-sans"
     >
       <body className="min-h-full flex flex-col font-sans">
-        <Navbar />
-        <main className="flex-grow flex flex-col">
+        <LayoutWrapper navbar={<Navbar />} footer={<Footer />}>
           {children}
-        </main>
-        <Footer />
+        </LayoutWrapper>
       </body>
     </html>
   );

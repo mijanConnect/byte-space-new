@@ -27,8 +27,8 @@ export function Navbar() {
 
         {/* Right: Auth & Cart (Desktop) */}
         <div className="hidden md:flex col-span-3 justify-end items-center gap-8">
-          <Link href="/signin" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Sign In</Link>
-          <Link href="/join" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Join Us</Link>
+          <Link href="/login" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Sign In</Link>
+          <Link href="/register" className="label-m text-neutral-50 hover:text-neutral-200 transition-colors">Join Us</Link>
           <button className="text-neutral-50 hover:text-neutral-200 transition-colors">
             <CartIcon className="w-6 h-6" fill="currentColor" />
           </button>
@@ -54,8 +54,8 @@ export function Navbar() {
           <Link href="/courses" className="label-m text-neutral-50">Courses</Link>
           <Link href="/creators" className="label-m text-neutral-50">Creators</Link>
           <div className="h-px bg-primary-500 my-2" />
-          <Link href="/signin" className="label-m text-neutral-50">Sign In</Link>
-          <Link href="/join" className="label-m text-neutral-50">Join Us</Link>
+          <Link href="/login" className="label-m text-neutral-50">Sign In</Link>
+          <Link href="/register" className="label-m text-neutral-50">Join Us</Link>
           <button className="flex items-center gap-2 label-m text-neutral-50 mt-2">
             <CartIcon className="w-6 h-6" fill="currentColor" />
             <span>Cart</span>
