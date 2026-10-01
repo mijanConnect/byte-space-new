@@ -26,7 +26,17 @@ export function AuthContainer({ title, subtitle, children }: AuthContainerProps)
       />
 
       {/* Mobile: simple centered card */}
-      <div className="flex lg:hidden relative z-10 w-full flex-grow items-center justify-center px-5 py-8">
+      <div className="flex lg:hidden flex-col relative z-10 w-full flex-grow items-center justify-center px-5 py-8 gap-6">
+        {/* Back to Home Button (Mobile) */}
+        <div className="w-full max-w-[500px] flex justify-start">
+          <Link href="/" className="flex items-center gap-2 text-white/90 hover:text-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            <span className="label-m">Back to Home</span>
+          </Link>
+        </div>
+
         <div className="bg-white rounded-[32px] w-full max-w-[500px] p-8 md:p-12 shadow-2xl">
           {children}
         </div>

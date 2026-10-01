@@ -4,17 +4,17 @@ import { SearchBar } from "./FooterSearchBar";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-neutral-200 mt-auto pt-16 pb-8">
+    <footer className="bg-background border-t border-neutral-200 mt-auto pt-10 lg:pt-16 pb-8">
       <div className="page-layout">
         {/* Top Section */}
-        <div className="col-span-12 lg:col-span-5 flex flex-col gap-6">
+        <div className="col-span-12 lg:col-span-5 flex flex-col gap-4 lg:gap-6">
           <Link href="/" className="flex items-center gap-2">
             <LogoIconBlack className="w-[171px] h-[37px]" />
           </Link>
           <p className="body-xs lg:body-s text-neutral-600 mt-2">
             Stay Up to date with our latest features and releases by joining our newsletter.
           </p>
-          <div className="mt-4">
+          <div className="mt-2 lg:mt-4">
             <SearchBar
               placeholder="Enter your email"
               buttonText="Search"
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
 
         {/* Links Section */}
-        <div className="col-span-12 lg:col-span-6 lg:col-start-7 grid grid-cols-2 md:grid-cols-3 gap-8 mt-12 lg:mt-0">
+        <div className="col-span-12 lg:col-span-6 lg:col-start-7 grid grid-cols-2 md:grid-cols-3 gap-8 mt-10 lg:mt-0">
           {/* Column 1 */}
           <div className="flex flex-col gap-4">
             <Link href="#" className="body-s text-neutral-600 hover:text-primary-500 transition-colors">Featured Courses</Link>
@@ -55,11 +55,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="col-span-12 mt-16 pt-8 border-t border-neutral-300 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="body-s text-neutral-600">
+        <div className="col-span-12 mt-10 lg:mt-16 pt-8 border-t border-neutral-300 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+          <p className="body-s text-neutral-600 text-center md:text-left">
             @ 2023 ByteSpace. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <Link href="#" className="body-s text-neutral-600 hover:text-primary-500 transition-colors">Privacy Policy</Link>
             <Link href="#" className="body-s text-neutral-600 hover:text-primary-500 transition-colors">Terms of Service</Link>
             <Link href="#" className="body-s text-neutral-600 hover:text-primary-500 transition-colors">Cookies Settings</Link>
