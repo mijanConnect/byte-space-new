@@ -12,8 +12,8 @@ export default function Home() {
       <Hero />
       <Companies />
       <DiscoverCourses />
-      <PromoSection />
       <LearningPaths />
+      <PromoSection />
       <CTASection />
       <TestimonialsSection />
     </>

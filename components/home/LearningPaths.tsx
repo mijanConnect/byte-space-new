@@ -36,14 +36,14 @@ const paths: LearningPathData[] = [
 
 export function LearningPaths() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-t border-neutral-100">
+    <section className="w-full bg-white pb-16 md:pb-24">
       <div className="page-layout">
         {/* Header */}
-        <div className="col-span-12 md:col-span-8 md:col-start-3 text-center mb-14">
-          <h2 className="heading-s md:heading-m mb-4 lg:mb-6">
+        <div className="col-span-12 flex flex-col items-center text-center">
+          <h2 className="heading-s md:heading-s mb-4 lg:mb-4">
             Explore Diverse Learning Paths at Bytespace
           </h2>
-          <p className="body-m text-neutral-900 mb-4 lg:mb-10">
+          <p className="body-m md:body-l text-neutral-400 max-w-5xl">
             At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.
           </p>
         </div>

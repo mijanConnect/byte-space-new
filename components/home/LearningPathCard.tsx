@@ -11,7 +11,7 @@ export function LearningPathCard({ path }: { path: LearningPathData }) {
       <div className="w-16 h-16 rounded-full bg-[#CCFF00] flex items-center justify-center mb-5 text-neutral-900">
         {path.icon}
       </div>
-      <h3 className="text-neutral-900 font-semibold text-[15px] md:text-[17px] text-center leading-tight">
+      <h3 className="text-neutral-900 label-xl">
         {path.name}
       </h3>
     </div>
