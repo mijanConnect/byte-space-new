@@ -108,7 +108,7 @@ export function DiscoverCourses() {
     <section className="w-full bg-white py-16 md:py-24">
       <div className="page-layout">
         {/* Header */}
-        <div className="col-span-12 md:col-span-8 md:col-start-3 text-center mb-10 px-4 md:px-0">
+        <div className="col-span-12 md:col-span-8 md:col-start-3 text-center mb-0">
           <h2 className="text-3xl md:text-[40px] font-bold text-neutral-900 mb-6 leading-tight">
             Discover Your Passion,<br />Build Your Skills
           </h2>
@@ -118,7 +118,7 @@ export function DiscoverCourses() {
         </div>
 
         {/* Categories (Pills) */}
-        <div className="col-span-12 flex flex-wrap justify-center items-center gap-2.5 mb-14 max-w-[900px] mx-auto px-4 md:px-0">
+        <div className="col-span-12 flex flex-wrap justify-center items-center gap-2.5 mb-6 max-w-[900px] mx-auto">
           {categories.map((cat, idx) => (
             <button
               key={idx}
@@ -137,7 +137,7 @@ export function DiscoverCourses() {
         </div>
 
         {/* Grid */}
-        <div className="col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-0">
+        <div className="col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {filteredCourses.length > 0 ? (
             filteredCourses.map((course) => (
               <DiscoverCourseCard key={course.id} course={course} />

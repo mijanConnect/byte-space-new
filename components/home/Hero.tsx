@@ -37,12 +37,12 @@ export function Hero() {
           <h1 className="heading-m md:heading-l text-neutral-50 mb-4 md:mb-6">
             Get Access to Hundreds <br /> Courses Available
           </h1>
-          <p className="body-m md:body-l text-neutral-100 mb-8 md:mb-10 max-w-4xl px-4 md:px-0">
+          <p className="body-m md:body-l text-neutral-100 mb-8 md:mb-10 max-w-4xl">
             Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
           </p>
 
           {/* Search Bar */}
-          <div className="w-full max-w-2xl px-4 md:px-0">
+          <div className="w-full max-w-2xl">
             <SearchBar
               placeholder="Course, topic, creator"
               buttonText="Search"
