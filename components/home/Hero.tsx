@@ -26,7 +26,7 @@ export function Hero() {
           src="/images/hero/3d-ornament.png"
           alt="3D Ornaments"
           fill
-          sizes="100vw"
+          sizes="(max-width: 768px) 0px, 80vw"
           className="object-contain object-bottom"
           priority
         />
