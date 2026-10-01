@@ -25,14 +25,14 @@ export function DiscoverCourseCard({ course }: { course: CourseData }) {
         )}
 
         {/* Overlay Pills */}
-        <div className="absolute bottom-3 left-3 right-3 flex flex-wrap gap-1.5">
-          <span className="bg-white/60 backdrop-blur-md text-neutral-800 text-[10px] font-semibold px-2.5 py-1 rounded-full">
+        <div className="absolute bottom-5 left-3 right-3 flex flex-wrap justify-between px-2">
+          <span className="bg-white/60 backdrop-blur-md text-neutral-800 label-xs px-2.5 py-1 rounded-full">
             {course.lessons} Lessons
           </span>
-          <span className="bg-white/60 backdrop-blur-md text-neutral-800 text-[10px] font-semibold px-2.5 py-1 rounded-full">
+          <span className="bg-white/60 backdrop-blur-md text-neutral-800 label-xs px-2.5 py-1 rounded-full">
             {course.duration}
           </span>
-          <span className="bg-white/60 backdrop-blur-md text-neutral-800 text-[10px] font-semibold px-2.5 py-1 rounded-full">
+          <span className="bg-white/60 backdrop-blur-md text-neutral-800 label-xs px-2.5 py-1 rounded-full">
             {course.comments} Comments
           </span>
         </div>
@@ -40,15 +40,15 @@ export function DiscoverCourseCard({ course }: { course: CourseData }) {
 
       {/* Content */}
       <div className="flex justify-between items-start mb-1">
-        <h3 className="text-lg font-bold text-neutral-900 leading-tight line-clamp-1">{course.title}</h3>
+        <h3 className="heading-xs">{course.title}</h3>
         <div className="flex items-center gap-1 shrink-0 ml-2">
-          <span className="text-sm font-semibold text-neutral-500">{course.rating}</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="#d1d5db" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" />
+          <span className="body-l mt-0.5">{course.rating}</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#CED0D3" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#CED0D3" />
           </svg>
         </div>
       </div>
-      <p className="text-xs text-blue-500 mb-4 font-medium">by {course.author}</p>
+      <p className="body-s text-neutral-500 mb-4 font-medium">by <span className="text-blue-600">{course.author}</span></p>
 
       {/* Level and Avatars */}
       <div className="flex items-center gap-2 mb-4">
@@ -58,7 +58,7 @@ export function DiscoverCourseCard({ course }: { course: CourseData }) {
             <rect x="10" y="8" width="4" height="13"></rect>
             <rect x="2" y="13" width="4" height="8"></rect>
           </svg>
-          <span className="text-[11px] font-semibold text-neutral-600">{course.level}</span>
+          <span className="label-xs text-neutral-600">{course.level}</span>
         </div>
 
         <div className="flex items-center">
@@ -73,8 +73,8 @@ export function DiscoverCourseCard({ course }: { course: CourseData }) {
 
       {/* Price */}
       <div className="flex items-end">
-        <span className="text-blue-600 font-bold text-xl">${course.price}</span>
-        <span className="text-neutral-400 text-[11px] font-medium mb-1 ml-0.5">/lifetime</span>
+        <span className="heading-xs text-primary-800">${course.price}</span>
+        <span className="text-neutral-400 body-xs">/lifetime</span>
       </div>
     </div>
   );
