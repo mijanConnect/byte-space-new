@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap');
 @import "tailwindcss";
 
@@ -9,7 +10,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-poppins: var(--font-poppins), sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
   --font-satoshi: 'Satoshi', sans-serif;
 
   /* Neutral (Black) */
@@ -50,13 +51,6 @@
   --color-secondary-800: #546b09;
   --color-secondary-900: #465a0d;
   --color-secondary-950: #243300;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -152,11 +146,23 @@ body {
 @utility page-layout {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 40px;
-  padding-left: 120px;
-  padding-right: 120px;
+  gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
+  @media (min-width: 768px) {
+    gap: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
